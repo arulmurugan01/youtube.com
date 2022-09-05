@@ -1,0 +1,12 @@
+body{
+    margin:0px;
+    padding-top:73px;
+    padding-left: 97px;
+    padding-right:22px;
+    background-color:rgba(248, 248, 248, 0.856);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+p{
+    font-family:roboto, arial;
+    margin: 0px 0px;
+}

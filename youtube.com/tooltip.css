@@ -1,0 +1,108 @@
+.video-image-container{
+    position:relative;
+    z-index:1;
+}
+.duration{
+    position:absolute;
+    bottom:11px;
+    right:5px;
+    background-color:black;
+    color:white;
+    font-family:roboto,arial;
+    font-weight:501;
+    font-size:12px;
+    padding-top:3px;
+    padding-bottom:3px;
+    padding-left:4px;
+    padding-right:4px;
+    border-radius:2px;
+}
+.search-icon-container,
+.voice-search-icon-container,
+.upload-icon-container,
+.youtube-apps-container,
+.notification-icon-container
+{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.search-icon-container .tooltip,
+.voice-search-icon-container .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-container .tooltip,
+.notification-icon-container .tooltip
+{
+    background-color:rgba(111, 111, 111, 0.925);
+    position:absolute;
+    bottom:-49px;
+    color:white;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:10px;
+    padding-left:10px;
+    font-size:12px;
+    font-family:roboto,arial;
+    border-radius:2px;
+    white-space:nowrap;
+    opacity:0;
+    pointer-events:none;
+    transition: opacity 0.15s;
+}
+.search-icon-container:hover .tooltip, 
+.voice-search-icon-container:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-container:hover .tooltip,
+.notification-icon-container:hover .tooltip
+{
+    opacity:1;
+}
+.profile-image-container{
+    position:relative;
+}
+
+
+.profile-tooltip {
+    display:flex;
+    position:absolute;
+    background-color:rgb(255, 255, 255);
+    box-shadow: 5px 1px 7px rgba(0,0,0,0.15);
+    margin:3px;
+    padding-left:14px;
+    padding-right:21px;
+    padding-top:12px;
+    padding-bottom:12px;
+    border-radius:5px;
+    justify-content:center;
+    opacity:0;
+    pointer-events:none;
+    transition: opacity 0.30s;
+}
+.profile-image-container:hover .profile-tooltip{
+    opacity:1;
+}
+.profile-tooltip img{
+    width:51px;
+    height:51px;
+    border-radius:28px;
+    object-fit:cover;
+}
+.tooltip-grid-column{
+    display:flex;
+    flex-direction:column;
+    white-space: nowrap;
+    justify-content:center;
+    margin-left:10px;
+}
+.tooltip-channel-name {
+    font-family: roboto,arial;
+    font-weight:bold;
+    font-size:17px;
+    margin-bottom:4px;
+}
+.tooltip-subscribers{
+    font-family:arial;
+    font-size:15px;
+    color:rgb(79, 79, 79);
+}
